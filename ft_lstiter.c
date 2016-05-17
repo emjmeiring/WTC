@@ -3,26 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomeirin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simzam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/15 16:41:26 by jomeirin          #+#    #+#             */
-/*   Updated: 2016/05/15 16:41:30 by jomeirin         ###   ########.fr       */
+/*   Created: 2016/05/12 10:35:22 by simzam            #+#    #+#             */
+/*   Updated: 2016/05/17 23:46:47 by simzam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Iterates the list "lst" and applies the function f to each link. */
+
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
 	t_list	*new_list;
 
-	if (lst)
+	while (lst)
 	{
-		new_list = lst;
-		while (list)
-		{
-			f(list);
-			list = list->next;
-		}
+		f(lst);
+		lst = lst->next;
 	}
 }

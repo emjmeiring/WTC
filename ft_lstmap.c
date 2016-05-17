@@ -3,19 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jomeirin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: simzam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/05/15 16:44:36 by jomeirin          #+#    #+#             */
-/*   Updated: 2016/05/15 16:44:40 by jomeirin         ###   ########.fr       */
+/*   Created: 2016/05/13 10:29:43 by simzam            #+#    #+#             */
+/*   Updated: 2016/05/17 00:01:16 by simzam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/* Iterates the list "lst" and applies the function "f" to each link to create
+ * a “fresh” list (using malloc(3)) resulting from the successive applications 
+ * of "f". If the allocation fails, the function returns NULL.
+ */
+
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list *prev_list;
-	t_list *new_list;
+	t_list	*prev_list;
+	t_list	*new_list;
 
 	if (!lst)
 		return (NULL);
