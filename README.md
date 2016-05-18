@@ -5,5 +5,21 @@
 ######Learn more about forking a repository <a href="https://help.github.com/articles/fork-a-repo/">here</a> and about pull requests <a href=https://help.github.com/articles/creating-a-pull-request/">here.</a>
 ######You might want to start <a href="https://www.youtube.com/watch?v=Y9XZQO1n_7c">here</a> if you are completely new to the concept of version control.
 
+##How to make the library (libft.a)?
+##### Assuming that you have the clone of the repository.
+```C
+$ cd libft/  //Go to where the library recipe is at.
+$ make      //Make the library from the recipe.
+```
+Now ```libft.a``` must be part of the working directory.
+
+##How to use the library (linking to a program)?
+##### Assuming that you have your main.c in the libft_test directory of the repository.
+```C
+$ alias run='gcc -Wall -Werror -Wextra' //This could save you a lof time.
+$ run ./libft_test/main.c -c -I./includes/ -L. -lft
+```
+###  And you're good to go!!!
+
 ###REMEMBER
 ####To Respect the Norme
