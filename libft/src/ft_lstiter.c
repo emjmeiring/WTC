@@ -16,8 +16,6 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	t_list	*new_list;
-
 	while (lst)
 	{
 		f(lst);

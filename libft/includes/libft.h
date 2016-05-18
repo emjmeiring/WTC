@@ -6,7 +6,7 @@
 /*   By: jomeirin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/15 16:32:34 by jomeirin          #+#    #+#             */
-/*   Updated: 2016/05/15 17:49:35 by jomeirin         ###   ########.fr       */
+/*   Updated: 2016/05/17 03:41:22 by simzam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct		s_list
 
 void				*ft_memset(void *str, int c, size_t n);
 void				*ft_bzero(void *str, size_t n);
+void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memchr(const void *str, int c, size_t);
 int					ft_memcmp(void *str1, void *str2, size_t n);
@@ -75,9 +76,9 @@ char				*ft_strrchr(char *str, int c);
 //char				**ft_strsplit(char const *s, char c);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
-/*void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-t_list				*ft_lstnew(void const *content, size_t content_size);*/
+t_list				*ft_lstnew(void const *content, size_t content_size);
