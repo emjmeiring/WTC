@@ -16,7 +16,7 @@ Now ```libft.a``` must be part of the working directory.
 ##How to use the library (linking to a program)?
 ##### Assuming that you have your main.c in the libft_test directory of the repository.
 ```C
-$ alias run='gcc -Wall -Werror -Wextra' //This could save you a lof time.
+$ alias run='gcc -Wall -Werror -Wextra' //This could save you a lot time.
 $ run ./libft_test/main.c -c -I./includes/ -L. -lft
 ```
 ###  And you're good to go!!!
