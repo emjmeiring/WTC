@@ -1,3 +1,7 @@
+<html>
+<img src="https://apply.borntocode.co.za/assets/new_ui/logo-4149353f5a49382b60f6915c1a4e2dde.svg" alt="We Think Code" 
+</body>
+</html>
 #WeThinkCode_   Semi-C-Library
 ###  For safety, recorded and trackable history of the growth of this C-library and for sharing this work and contributing back to it, we have decided to keep it here.
 ####   Feel free to fork the repository and use this library. Also if you would like to contribute back, push to the repository that you will have forked and do a pull request.
